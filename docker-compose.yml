@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: .
+    command: bash -c "npm start"
+    volumes:
+      - .:/output
+    expose:
+      - "3001"
+    ports:
+      - "3001:3001"

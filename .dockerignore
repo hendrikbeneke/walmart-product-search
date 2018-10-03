@@ -1,0 +1,15 @@
+.DS_STORE
+.git
+.gitignore
+.nvmrc
+.editorconfig
+*.iml
+.idea
+docker-compose*.yml
+Dockerfile
+node_modules
+config/local*.js
+config/local*.json
+mocha.json
+npm-debug.log
+tmp

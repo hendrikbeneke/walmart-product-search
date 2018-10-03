@@ -1,0 +1,12 @@
+extends: walmart
+
+plugins:
+  - import
+  - json
+
+rules:
+  object-curly-newline: 0
+  comma-dangle: 0
+  no-underscore-dangle: [2, { allow: ["_id"] }]
+  max-len: ["error", 120]
+  no-param-reassign: 0
