@@ -8,5 +8,9 @@ module.exports = {
   },
   mongodb: {
     connection: 'mongodb://localhost:27017/walmart-product-search'
+  },
+  elasticsearch: {
+    connection: 'http://localhost:9200',
+    apiVersion: '6.4'
   }
 };
