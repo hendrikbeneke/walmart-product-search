@@ -1,8 +1,27 @@
 version: "2"
 services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.4.2
+    environment:
+    - http.cors.enabled=true
+    - xpack.security.enabled=false
+    - http.port=9200
+    - http.cors.allow-origin=*
+    - http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Authorization
+    - http.cors.allow-credentials=true
+    volumes:
+    - esdata:/usr/share/elasticsearch/data
+    ports:
+    - "9200:9200"
+    expose:
+    - "9200"
+    - "9300"
   mongodb:
     image: mongo:4
     expose:
     - "27017"
     ports:
     - "27017:27017"
+volumes:
+  esdata:
+    driver: local
