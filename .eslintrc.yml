@@ -10,3 +10,4 @@ rules:
   no-underscore-dangle: [2, { allow: ["_id"] }]
   max-len: ["error", 120]
   no-param-reassign: 0
+  quotes: ["error", "single"]
