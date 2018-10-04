@@ -11,6 +11,6 @@ module.exports = {
   },
   elasticsearch: {
     connection: 'http://localhost:9200',
-    apiVersion: '6.4'
+    apiVersion: '6.x'
   }
 };
