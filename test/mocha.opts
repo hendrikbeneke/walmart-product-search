@@ -1,0 +1,4 @@
+--require=env-test
+--require=./test/mocha-base
+-t 5000
+--exit
