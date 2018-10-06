@@ -2,7 +2,6 @@ const Hapi = require('hapi');
 const config = require('config');
 const pingRoute = require('./routes/ping');
 const searchRoute = require('./routes/search');
-const mongo = require('../lib/mongo');
 
 const port = config.get('app.port');
 

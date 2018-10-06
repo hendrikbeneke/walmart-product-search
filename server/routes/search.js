@@ -1,5 +1,4 @@
 const Joi = require('joi');
-const mongo = require('../../lib/mongo');
 const searchProducts = require('../../lib/search-products');
 
 const maxResultSize = 1000;
