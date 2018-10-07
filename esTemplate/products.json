@@ -2,33 +2,23 @@
   "index_patterns": [
     "products"
   ],
-  "settings": {
-    "analysis": {
-      "normalizer": {
-        "lowercase_normalizer": {
-          "type": "custom",
-          "char_filter": [],
-          "filter": [
-            "lowercase"
-          ]
-        }
-      }
-    }
-  },
   "mappings": {
     "_doc": {
       "properties": {
         "name": {
-          "type": "keyword",
-          "normalizer": "lowercase_normalizer"
+          "type": "text"
         },
         "shortDescription": {
-          "type": "keyword",
-          "normalizer": "lowercase_normalizer"
+          "type": "text"
         },
         "longDescription": {
-          "type": "keyword",
-          "normalizer": "lowercase_normalizer"
+          "type": "text"
+        },
+        "msrp": {
+          "type": "float"
+        },
+        "salePrice": {
+          "type": "float"
         }
       }
     }
