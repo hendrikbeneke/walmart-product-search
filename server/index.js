@@ -6,7 +6,6 @@ const searchRoute = require('./routes/search');
 const port = config.get('app.port');
 
 module.exports = async () => {
-  await mongo.init();
   const validate = {
     failAction: (request, h, err) => {
       throw err;

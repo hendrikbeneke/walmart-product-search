@@ -8,7 +8,7 @@ module.exports = {
   register: server => {
     server.route({
       method: 'GET',
-      path: '/v1/products/search',
+      path: '/products/search',
       config: {
         validate: {
           query: {
