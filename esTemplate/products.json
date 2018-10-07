@@ -19,6 +19,9 @@
         },
         "salePrice": {
           "type": "float"
+        },
+        "standardShipRate": {
+          "type": "float"
         }
       }
     }

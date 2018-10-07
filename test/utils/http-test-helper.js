@@ -1,5 +1,4 @@
 const Hapi = require('hapi');
-const config = require('config');
 
 module.exports = {
   getServer: async route => {
