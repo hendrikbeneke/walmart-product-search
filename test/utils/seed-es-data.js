@@ -9,7 +9,10 @@ const esIndexName = config.get('jobs.syncProductData.esIndexName');
 
 module.exports = async () => {
   await esClient.indices.delete({ index: '_all' });
-  await esClient.indices.deleteTemplate({ name: 'products_template' });
+  const templateExists = await esClient.indices.existsTemplate({ name: 'products_template' });
+  if (templateExists) {
+    await esClient.indices.deleteTemplate({ name: 'products_template' });
+  }
   await esClient.indices.putTemplate({
     name: 'products_template',
     body: esTemplate
