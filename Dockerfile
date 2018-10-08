@@ -10,7 +10,3 @@ ENV NODE_ENV $NODE_ENV
 COPY package.json package-lock.json /app/
 RUN npm install
 COPY . /app
-
-EXPOSE 3001
-
-CMD ["npm", "start"]
