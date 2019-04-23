@@ -89,3 +89,4 @@ config/local*.js
 config/local*.json
 config/local*.yml
 tmp
+rest-client.private.env.json

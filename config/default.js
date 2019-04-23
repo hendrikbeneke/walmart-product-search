@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 module.exports = {
   app: {
     port: 3001
@@ -21,10 +22,21 @@ module.exports = {
     syncProductData: {
       name: 'sync-product-data',
       cronInterval: '0 * * * *',
-      sourceProductIdsUrl: 'https://gist.githubusercontent.com/daniyalzade/f7e0d469be9b8a132f9b/raw/items.csv',
       productLookupBaseUrl: 'https://api.walmartlabs.com/v1/items',
       walmartApiKey: 'kjybrqfdgp3u4yv2qzcnjndj',
-      esIndexName: 'products'
+      esIndexName: 'products',
+      productIds: [
+        14225185,
+        14225186,
+        14225188,
+        14225187,
+        39082884,
+        30146244,
+        12662817,
+        34890820,
+        19716431,
+        42391766
+      ]
     }
   }
 };
